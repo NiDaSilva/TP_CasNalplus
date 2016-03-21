@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" />
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/assets/class/class-programme.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/js/ICanHaz.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/js/ICanHaz.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/js/routing.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/maintemplate.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/route.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/templates" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maintemplate.html" charset="UTF-8" />
+  </component>
+</project>

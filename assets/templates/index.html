@@ -1,0 +1,97 @@
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Minimal</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Acceuil</a>
+			<a href="#programme" class="smoothScroll">Programme</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="acceuil" name="acceuil"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+				<img src="assets/img/logo.png">
+			</div>
+			<br>
+			<div class="row">
+				<h1>Nalplus</h1>
+				<br>
+				<h3>Nous travaillons chaque jour pour vous offrir le meilleur divertissement.</h3>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	
+	<!-- ========== SECTION PROGRAMME ========== -->
+	<section id="programme" name="programme"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>PROGRAMME TV</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<!-- PARCOURS DES PROGRAMMES-->
+				<div class="col-lg-6 col-lg-offset-3">
+                    <table class="tableau">
+                        <tr>
+                            {{programme}}
+                            {{#tranche}}
+                            <td>{{horaire}}</td>
+                            <td>{{nom}}</td>
+                            <td>{{type}}</td>
+                            <td>{{duree}}-{{version}}</td>
+                            <td>{{inedit}}</td>
+                            {{/tranche}}
+                        </tr>
+                    </table>
+				</div>								
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+	<!-- ========== SECTION CONTACTE ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>Vos Remarque</h3>
+                <p>Faite nous parvenir vos remarques ou vos conseils</p>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+					<p>Rue Adrien recouvreur<br/>Angers, France<br/>02 41 22 23 24</p>
+					<p>Nalplus@gmail.com</p>
+					<p><button type="button" class="btn btn-warning">Nous Contactez!</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+  <script>(function(){
+
+      // Menu settings
+      $('#menuToggle, .menu-close').on('click', function(){
+          $('#menuToggle').toggleClass('active');
+          $('body').toggleClass('body-push-toleft');
+          $('#theMenu').toggleClass('menu-open');
+      });
+
+
+  })(jQuery)</script>
