@@ -1,3 +1,0 @@
- var Programme={
-     allProgramme: undefined
-};

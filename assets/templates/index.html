@@ -48,17 +48,18 @@
 				
 				<!-- PARCOURS DES PROGRAMMES-->
 				<div class="col-lg-6 col-lg-offset-3">
-                    <table class="tableau">
+                    <table class="tableau Chaine">
+						{{#chaine}}
                         <tr>
-                            {{programme}}
-                            {{#tranche}}
-                            <td>{{horaire}}</td>
+                            {{#programme}}
+                            <td>{{programme["NOM"]}}</td>
                             <td>{{nom}}</td>
                             <td>{{type}}</td>
                             <td>{{duree}}-{{version}}</td>
                             <td>{{inedit}}</td>
-                            {{/tranche}}
+                            {{/programme}}
                         </tr>
+						{{/chaine}}
                     </table>
 				</div>								
 			</div>
@@ -71,7 +72,7 @@
 	<div id="f">
 		<div class="container">
 			<div class="row">
-				<h3>Vos Remarque</h3>
+				<h3>Vos Remarques</h3>
                 <p>Faite nous parvenir vos remarques ou vos conseils</p>
 				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
 				
