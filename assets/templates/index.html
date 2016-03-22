@@ -49,17 +49,16 @@
 				<!-- PARCOURS DES PROGRAMMES-->
 				<div class="col-lg-6 col-lg-offset-3">
                     <table class="tableau Chaine">
-						{{#chaine}}
+						{{#ch}}
                         <tr>
-                            {{#programme}}
-                            <td>{{programme["NOM"]}}</td>
-                            <td>{{nom}}</td>
-                            <td>{{type}}</td>
-                            <td>{{duree}}-{{version}}</td>
-                            <td>{{inedit}}</td>
-                            {{/programme}}
+                            {{#pro}}
+                            <td>{{pro.nom}}</td>
+                            <td>{{pro.type}}</td>
+                            <td>{{pro.duree}}-{{pro.hd}}</td>
+                            <td>{{pro.inedit}}</td>
+                            {{/pro}}
                         </tr>
-						{{/chaine}}
+						{{/ch}}
                     </table>
 				</div>								
 			</div>

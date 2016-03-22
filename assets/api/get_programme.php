@@ -7,12 +7,12 @@ try {
     $requete="select * from programme";
     foreach  ($conn->query($requete) as $row) {
         $lesProgrammes[$i]=array(
-            "annee" => $row["ANNEE"],
+            "annee" => $row["ANNEEREALISATION"],
             "description" => $row["DESCRIPTION"],
             "duree" => $row["DUREE"],
             "hd"=> $row["HD"],
-            "inedit" =>  $row["INEDIT"],
-            "nom" => $row["NOM"],
+            "inedit" =>  $row["DIFFUSION"],
+            "nom" => $row["TITREORIGINAL"],
         );
         $i++;
     }

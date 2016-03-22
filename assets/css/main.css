@@ -312,4 +312,10 @@ a:after {
 .Chaine{
 	border:1px solid white;
 }
+.zebre:nth-child(even){
+    background-color: darkgray;
+}
 
+.zebre:nth-child(odd){
+    background-color: white;
+}
