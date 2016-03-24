@@ -48,17 +48,8 @@
 				
 				<!-- PARCOURS DES PROGRAMMES-->
 				<div class="col-lg-6 col-lg-offset-3">
-                    <table class="tableau Chaine">
-						{{#ch}}
-                        <tr>
-                            {{#pro}}
-                            <td>{{pro.nom}}</td>
-                            <td>{{pro.type}}</td>
-                            <td>{{pro.duree}}-{{pro.hd}}</td>
-                            <td>{{pro.inedit}}</td>
-                            {{/pro}}
-                        </tr>
-						{{/ch}}
+                    <table id="prog" class="tableau Chaine">
+
                     </table>
 				</div>								
 			</div>
@@ -84,7 +75,8 @@
 		</div>
 	</div>
 </body>
-  <script>(function(){
+  <script>
+        (function(){
 
       // Menu settings
       $('#menuToggle, .menu-close').on('click', function(){
@@ -92,6 +84,11 @@
           $('body').toggleClass('body-push-toleft');
           $('#theMenu').toggleClass('menu-open');
       });
-
-
-  })(jQuery)</script>
+  })(jQuery);
+        $(document).ready(function() {
+            for(var i=0;i<=Programme.allProgramme.length;i++)
+            {
+               $("#prog").append("<tr><td>"+Programme.allProgramme[i].nom+"</td><td>"+Programme.allProgramme[i].duree+"</td><td>"+Programme.allProgramme[i].inedit+"</td><td>"+Programme.allProgramme[i].hd+"</td></tr>");
+            }
+        });
+  </script>

@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - casnalplus@localhost" uuid="1ff05d0f-78b9-477f-91fa-9f913d854a5c">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="MySQL" version="5.6.17" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="casnalplus"/>
+    <table name="acteur" schema="" catalog="casnalplus" type="TABLE">
+      <column name="CODE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="COTEPOPULARITE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="NOMPERSONNAGE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="NOM" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PRENOM" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="CODE"/>
+    </table>
+    <table name="avis" schema="" catalog="casnalplus" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="CODE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="NOTE" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="COMMENTAIRE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <index name="I_FK_AVIS_PROGRAMME" unique="false" columns="CODE"/>
+    </table>
+    <table name="chaine" schema="" catalog="casnalplus" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="NOMCHAINE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
   </data-source>
 </component>

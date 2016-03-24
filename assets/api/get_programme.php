@@ -11,8 +11,12 @@ try {
             "description" => $row["DESCRIPTION"],
             "duree" => $row["DUREE"],
             "hd"=> $row["HD"],
-            "inedit" =>  $row["DIFFUSION"],
-            "nom" => $row["TITREORIGINAL"],
+            "inedit"=>  $row["DIFFUSION"],
+            "nom"=> $row["TITREORIGINAL"],
+            "periode"=> $row["ID_P"],
+            "type"=>$row["ID_T"],
+            "signaletiquejeunesse"=> $row["ID_S"],
+            "nationalite"=> $row["ID_N"]
         );
         $i++;
     }

@@ -310,7 +310,17 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 .Chaine{
+    width: 100%;
+    height: 45%;
 	border:1px solid white;
+}
+td
+{
+    border: 1px solid white;
+}
+tr
+{
+    border: 1px solid white;
 }
 .zebre:nth-child(even){
     background-color: darkgray;
