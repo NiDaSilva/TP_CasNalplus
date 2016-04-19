@@ -6,7 +6,15 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
-
+.channel {
+    float: left;
+    width: 100%;
+    clear: both;
+    background: #fff;
+    border-bottom: 1px solid #dfdedc;
+    padding: 14px 0 15px 0;
+    min-height: 84px;
+}
 body {
   background-color: #f2f2f2;
     font-family: 'EB Garamond', serif;

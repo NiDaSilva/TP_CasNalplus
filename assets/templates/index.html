@@ -49,9 +49,25 @@
 				<!-- PARCOURS DES PROGRAMMES-->
 				<div class="col-lg-6 col-lg-offset-3">
                     <table id="prog" class="tableau Chaine">
-
+                        <div class="block programme">
+                            <ul class="dark_tabs">
+                                <li>
+                                    <a>Hier</a>
+                                </li>
+                                <li class="active">
+                                    <a>Ce soir</a>
+                                </li>
+                                <li>
+                                    <a>En ce moment</a>
+                                </li>
+                                <li>
+                                    <a>Demain</a>
+                                </li>
+                            </ul>
+                        </div>
+                        {{diffusion}}
                     </table>
-				</div>								
+				</div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /f -->
@@ -77,7 +93,6 @@
 </body>
   <script>
         (function(){
-
       // Menu settings
       $('#menuToggle, .menu-close').on('click', function(){
           $('#menuToggle').toggleClass('active');
@@ -85,10 +100,4 @@
           $('#theMenu').toggleClass('menu-open');
       });
   })(jQuery);
-        $(document).ready(function() {
-            for(var i=0;i<=Programme.allProgramme.length;i++)
-            {
-               $("#prog").append("<tr><td>"+Programme.allProgramme[i].nom+"</td><td>"+Programme.allProgramme[i].duree+"</td><td>"+Programme.allProgramme[i].inedit+"</td><td>"+Programme.allProgramme[i].hd+"</td></tr>");
-            }
-        });
   </script>
